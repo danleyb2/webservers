@@ -15,7 +15,8 @@ public class Main {
 
         //create a listening socket
         try {
-            serverSocket=new ServerSocket(3000);
+            serverSocket=new ServerSocket();
+            serverSocket.bind(new InetSocketAddress("127.0.0.1",3000));
         }catch (SecurityException sec){
             System.err.println("Provide a port between 1024 and 65535. ");
         }catch (IOException io){
@@ -23,7 +24,7 @@ public class Main {
         }
 
 
-        System.out.println("Server running... ");
+        System.out.println("Server running at : "+serverSocket.getLocalSocketAddress()+" ...");
 
 
         //server loop
