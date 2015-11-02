@@ -7,7 +7,7 @@ import java.io.PrintStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class Main {
+public class Server {
 
     public static void main(String[] args) {
         ServerSocket serverSocket=null;
