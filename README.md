@@ -7,7 +7,8 @@ Webservers use sockets.<br>
 **simple** webservers that serve just a line of text.
 
 #### running
-in servers' dir, run
+start a terminal and navigate into the **simple** or **advanced** dir,  
+then run : 
  - PHP  
     `$ php server.php`
  - Python (currently only supports python3.4)  
@@ -17,8 +18,8 @@ in servers' dir, run
     `$ make server`  
     `$ ./server`
  
-then start your browser and navigate to `http://localhost:3000/`
-
+then start your browser and navigate to `http://localhost:3000/`  
+(*worked for me on Ubuntu 14.04*)
 
 ### Advanced
 **advanced** webservers that serve **more than just** a line of text.
