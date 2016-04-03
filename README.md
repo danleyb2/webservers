@@ -9,11 +9,13 @@ Webservers use sockets.<br>
 #### running
 in servers' dir, run
  - PHP  
-    `php server.php`
+    `$ php server.php`
  - Python (currently only supports python3.4)  
-    `python server.py`
+    `$ python server.py`
  - Java
- - C
+ - C  
+    `$ make server`  
+    `$ ./server`
  
 then start your browser and navigate to `http://localhost:3000/`
 
