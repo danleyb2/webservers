@@ -22,9 +22,9 @@ if __name__ == '__main__':
         request = connection.recv(1024)
 
 
-        print("From ", connection_address, request.decode('utf-8').split('\n')[0],end='\n')
+        print("From ",connection_address,request.decode('utf-8').split('\n')[0],end='\n')
         #send a response
-        connection.sendall('hello world from python server'.encode())
+        connection.sendall('Hello world from python server.\n'.encode())
         connection.close()
         connection=None
 
